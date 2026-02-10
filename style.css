@@ -1,0 +1,140 @@
+:root {
+            --cor-bege: #83835d;
+            --cor-bege-escuro: #e5e5c0;
+            --cor-branco: #ffffff;
+            --cor-texto: #4a4a4a;
+            --cor-detalhe: #8b8b7a;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--cor-bege);
+            color: var(--cor-texto);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .container-perfil {
+            background-color: var(--cor-branco);
+            border-radius: 12px;
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: var(--cor-detalhe);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .foto-perfil-moldura {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 30px;
+            border-radius: 10%;
+            border: 4px solid var(--cor-bege-escuro);
+            overflow: hidden;
+        }
+
+        .foto-perfil {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .descricao {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .descricao p {
+            margin-bottom: 15px;
+        }
+
+        .descricao lista {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .descricao item {
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .titulo-secao {
+            color: var(--cor-detalhe);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            font-weight: 500;
+            text-align: left;
+         
+        
+        }
+        
+        .lista-hobbies {
+            list-style-type: none;
+            margin-bottom: 30px;
+            text-align: left;
+            padding: 0;
+        }
+        
+        .lista-hobbies li {
+            padding: 10px 0;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .lista-hobbies i {
+            color: var(--cor-detalhe);
+            margin-right: 12px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .botao-social {
+            display: inline-block;
+            background-color: var(--cor-detalhe);
+            color: var(--cor-branco);
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: opacity 0.2s;
+        }
+        
+        .botao-social:hover {
+            opacity: 0.9;
+        }
+        
+        .rodape {
+            margin-top: 40px;
+            color: #aaa;
+            font-size: 0.8rem;
+        }
+        
+        @media (max-width: 600px) {
+            .container-perfil {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .foto-perfil-moldura {
+                width: 150px;
+                height: 150px;
+            }
+        }
